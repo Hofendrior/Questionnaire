@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<?php foreach($this->getMetaUniq('js') as $js): ?>
+        <script src'<?= $js ?>'></script>
+<?php endforeach; ?>
+<?php foreach($this->getMetaUniq('css') as $css): ?>
+        <link rel="stylesheet" type="text/css" href="<?= $css ?>" />
+<?php endforeach; ?>
+    </head>
+    <body>
+        <div id='content'>
+            <h1>Questionary</h1>
+<?= $content ?>
+        </div>
+    </body>
+</html>
